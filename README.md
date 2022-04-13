@@ -2,7 +2,7 @@
 # CS110 Project Proposal
 # << Project Title >>
 ## CS 110 Final Project
-### << Semester, Year >>
+### Spring, 2022
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
 
 << [repl](#) >>
@@ -16,8 +16,7 @@
 
 ## Project Description *(Software Lead)*
 
-<< Give an overview of your project >>
-
+This program takes a search term (in English) and searches that term on different browsers and in different languages and returns the most popular search results.
 ***    
 
 ## User Interface Design *(Front End Specialist)*
@@ -37,6 +36,7 @@
         * a short description of the module
 * Class Interface Design
     * << A simple drawing that shows the class relationships in your code (see below for an example). >>
+    * ![class diagram v2] (assets/class_diagram_v2.jpg)
         * ![class diagram](assets/class_diagram.jpg)
     * This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm.
 * Classes
@@ -51,6 +51,7 @@ The Project is broken down into the following file structure:
     * <all of your python files should go here>
 * assets
     * <all of your media, i.e. images, font files, etc, should go here)
+    * First Draft of our GUI: https://replit.com/@lukepawlicki/final-project-mla#assets/First%20GUI%20Draft.jpg
 * etc
     * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
 
@@ -60,15 +61,15 @@ The Project is broken down into the following file structure:
 
    * You must outline the team member roles and who was responsible for each class/method, both individual and collaborative.
 
-### Software Lead - << name >>
+### Software Lead - Luke Pawlicki
 
 << Worked as integration specialist by... >>
 
-### Front End Specialist - << name >>
+### Front End Specialist - Mako Ikeda
 
 << Front-end lead conducted significant research on... >>
 
-### Back End Specialist - << name >>
+### Back End Specialist - Andrew Wang
 
 << The back end specialist... >>
 

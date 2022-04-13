@@ -1,4 +1,6 @@
 import pygame
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
 #import your controller
 
 def main():
