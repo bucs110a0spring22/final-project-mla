@@ -23,8 +23,12 @@ This program takes a search term (in English) and searches that term on differen
 
 * << A wireframe or drawing of the user interface concept along with a short description of the interface. You should have one for each screen in your program. >>
     * For example, if your program has a start screen, game screen, and game over screen, you should include a wireframe / screenshot / drawing of each one and a short description of the components
-    * ![First Gui Draft](assets/First%20GUI%20Draft.jpg)
-    * ![GUI draft v2](assets/GUI_draft_v2.pdf)
+    * 
+    * GUI Draft v2
+    * ![](Image%204-28-22%20at%209.24%20AM.jpg)
+    * ![Image 4-28-22 at 9](Image%204-28-22%20at%209_2.jpg)
+    * ![Image 4-28-22 at 9](Image%204-28-22%20at%209_3.jpg)
+
 * << You should also have a screenshot of each screen for your final GUI >>
 
 ***        
@@ -37,12 +41,16 @@ This program takes a search term (in English) and searches that term on differen
         * url for the module documentation
         * a short description of the module
 * Class Interface Design
-    * << A simple drawing that shows the class relationships in your code (see below for an example). >>
-      * ![class diagram v1](assets/class_diagram_v1.pdf)
-        * ![class diagram](assets/class_diagram.jpg)
+  *
+  
+     * Class Diagram v1![class diagram v1](assets/class_diagram_v1.jpg)
+  *
+      * ![Image 4-28-22 at 9](Image%204-28-22%20at%209_5.jpg)
     * This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm.
 * Classes
-    * << You should have a list of each of your classes with a description. >>
+    * search bar(intext bar/search button)
+    * setting button(default broser, default language, comparison browser, comparison languages)
+    * results(selected results(translate results/scroll), add results, reader added results)
 
 ## Project Structure *(Software Lead)*
 
@@ -82,8 +90,10 @@ The Project is broken down into the following file structure:
 
 ## ATP
 
-| Step                  | Procedure     | Expected Results  | Actual Results |
-| ----------------------|:-------------:| -----------------:| -------------- |
-|  1  | Run Counter Program  | GUI window appears with count = 0  |          |
-|  2  | click count button  | display changes to count = 1 |                 |
-etc...
+| Step         | Procedure       | Expected Results  | Actual Results| 
+|:----------------------|:-------------:| -----------------:| -----------:|
+| 1 | Click Run Button |Program starts, GUI with search bar appears on the screen  |    
+|  2  | User types out texts  | display the texts in the search bar | 
+| 3 | Click search button | Runs the web scraper, and the search results from the two search engines appear on the screen | 
+| 4 | Press enter key | Same as clicking search button; runs the scraper |
+
