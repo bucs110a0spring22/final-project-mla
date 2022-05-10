@@ -16,7 +16,7 @@
 
 ## Project Description *(Software Lead)*
 
-This program takes a search term (in English) and searches that term on different browsers and in different languages and returns the most popular search results.
+This program takes a search term (in English) and searches that term on different browsers and returns the most popular search results.
 ***    
 
 ## User Interface Design *(Front End Specialist)*
@@ -73,11 +73,11 @@ The Project is broken down into the following file structure:
 
 ### Software Lead - Luke Pawlicki
 
-<< Worked as integration specialist by... >>
+<< Worked as integration specialist by monitoring work on the front end and back end to make sure that the two components worked together. Also scheduled weekly team meetings to complete the milestones and discuss work for the upcoming week.  >>
 
 ### Front End Specialist - Mako Ikeda
 
-<< Front-end lead conducted significant research on... >>
+<< Front-end lead conducted significant research on GUI design to make our GUI as user friendly as possible.  >>
 
 ### Back End Specialist - Andrew Wang
 
@@ -93,7 +93,8 @@ The Project is broken down into the following file structure:
 | Step         | Procedure       | Expected Results  | Actual Results| 
 |:----------------------|:-------------:| -----------------:| -----------:|
 | 1 | Click Run Button |Program starts, GUI with search bar appears on the screen  |    
-|  2  | User types out texts  | display the texts in the search bar | 
-| 3 | Click search button | Runs the web scraper, and the search results from the two search engines appear on the screen | 
-| 4 | Press enter key | Same as clicking search button; runs the scraper |
+|  2  | User types out query  | Display the query in the search bar| 
+| 3 | Click search button on screen or press enter key| Runs the web scraper, and the search results from different search engines for the same query appear on the screen | 
+| 4 | User searches another query by modifying value in search box and presses search| Data from previous query is cleared and repeats steps 2 and 3|
+
 

@@ -18,9 +18,11 @@ class Master_Scraper
   def Yahoo_Scraper(query):
     '''similar to google'''
     
+  '''
   def Bing_Scraper(query):
     '''similar to google'''
   def Naver_Scraper(query):
     '''use SerpAPI'''
   def Baidu_Scraper(query):
     '''harder because they encrypt URLs and don't have an API. need to use a '''
+    '''
