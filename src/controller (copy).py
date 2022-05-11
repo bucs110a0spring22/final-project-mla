@@ -21,14 +21,14 @@ class Controller:
   
     
   def gameloop(self):
-    query = input("What do you want to search for? ")
+    query = str(input("What do you want to search for? "))
     while self.state == "run":
     
-
+   #code for showing text on screen,display text on screen, when the box is clicked, run the scraper
     
       
             
-            
+            #move to the result page
       self.display.fill((250,250,250))
       self.display.blit(self.searchbar.image, (0,0))
       font = pygame.font.Font('freesansbold.ttf', 15)
@@ -38,18 +38,22 @@ class Controller:
       
       pygame.display.flip()
 
-       
-      
+
       for event in pygame.event.get():
         if event.type == pygame.MOUSEBUTTONDOWN:
           if self.searchbar.rect.collidepoint(event.pos):
             scrape = scraping.Master_Scraper()
             scrape.google_cse_search(query)
-            scrape.bing_cse_search(query)
 
 
             
-        
+            # self.display.flip()
+            # self.display.blit(self.textboxes.image, (0,0))
+            # 
+            
+        # if event.type == pygame.K_RETURN:
+        #   print("scraper")
+            # scraping.Master_Scraper(query)
             
             
        

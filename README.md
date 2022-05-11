@@ -1,11 +1,11 @@
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 # CS110 Project Proposal
-# << Project Title >>
+# Web Scraper
 ## CS 110 Final Project
 ### Spring, 2022
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
 
-<< [repl](#) >>
+[repl](https://replit.com/join/aqhcnsdthp-lukepawlicki) 
 
 << [link to demo presentation slides](#) >>
 
@@ -21,7 +21,7 @@ This program takes a search term (in English) and searches that term on differen
 
 ## User Interface Design *(Front End Specialist)*
 
-* << A wireframe or drawing of the user interface concept along with a short description of the interface. You should have one for each screen in your program. >>
+* Our GUI has one screen in which a user's input is shown in the searchbar, and the scraper runs when the user clicks the search button.
     * For example, if your program has a start screen, game screen, and game over screen, you should include a wireframe / screenshot / drawing of each one and a short description of the components
     * 
     * GUI Draft v2
@@ -29,7 +29,9 @@ This program takes a search term (in English) and searches that term on differen
     * ![Image 4-28-22 at 9](Image%204-28-22%20at%209_2.jpg)
     * ![Image 4-28-22 at 9](Image%204-28-22%20at%209_3.jpg)
 
-* << You should also have a screenshot of each screen for your final GUI >>
+* final GUI
+![Image 5-10-22 at 9](Image%205-10-22%20at%209.40%20PM.jpg)
+
 
 ***        
 
@@ -58,7 +60,10 @@ The Project is broken down into the following file structure:
 
 * main.py
 * src
-    * <all of your python files should go here>
+    * controller
+    * metabrowser
+    * scraping
+    * searchbar
 * assets
     * <all of your media, i.e. images, font files, etc, should go here)
     * First Draft of our GUI: https://replit.com/@lukepawlicki/final-project-mla#assets/First%20GUI%20Draft.jpg
@@ -73,20 +78,20 @@ The Project is broken down into the following file structure:
 
 ### Software Lead - Luke Pawlicki
 
-<< Worked as integration specialist by monitoring work on the front end and back end to make sure that the two components worked together. Also scheduled weekly team meetings to complete the milestones and discuss work for the upcoming week.  >>
+Worked as integration specialist by monitoring work on the front end and back end to make sure that the two components worked together. Also scheduled weekly team meetings to complete the milestones and discuss work for the upcoming week. Collaborated with both the front and back end to construct the controller and models. 
 
 ### Front End Specialist - Mako Ikeda
 
-<< Front-end lead conducted significant research on GUI design to make our GUI as user friendly as possible.  >>
+Front-end lead conducted significant research on GUI design to make our GUI as user friendly as possible. Made sure that the controller was designed to work with the scraper models provided by the back end. 
 
 ### Back End Specialist - Andrew Wang
 
-<< The back end specialist... >>
+The back end specialist designed the scraper models that we used in the controller. Conducted research on python libraries that we did not use in class. Communicated with other group members about structure of the scraper models.
 
 ## Testing *(Software Lead)*
 
-* << Describe your testing strategy for your project. >>
-    * << Example >>
+* We tested the project in two main ways. One way involved using separate repl files to test small portions of the code as we went. When we were getting toward the end of writing the code, we would test the code by commenting out the lines that weren't functioning yet to see if the rest worked.  
+    * Before creating the scraper models, we tested that the scraper worked in a separate repl file, then changed it to fit inside a class. 
 
 ## ATP
 
@@ -94,7 +99,7 @@ The Project is broken down into the following file structure:
 |:----------------------|:-------------:| -----------------:| -----------:|
 | 1 | Click Run Button |Program starts, GUI with search bar appears on the screen  |    
 |  2  | User types out query  | Display the query in the search bar| 
-| 3 | Click search button on screen or press enter key| Runs the web scraper, and the search results from different search engines for the same query appear on the screen | 
+| 3 | Click search button on screen Runs the web scraper, and the search results from different search engines for the same query appear on the screen | 
 | 4 | User searches another query by modifying value in search box and presses search| Data from previous query is cleared and repeats steps 2 and 3|
 
 
