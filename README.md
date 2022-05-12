@@ -38,12 +38,10 @@ This program takes a search term (in English) and searches that term on differen
 ## Program Design *(Backend Specialist)*
 
 * Non-Standard libraries
-    * << You should have a list of any additional libraries or modules used (pygame, request) beyond non-standard python. >>
-    * For each additional module you should include
-        * url for the module documentation
-        * a short description of the module
+    * requests
+      * https://docs.python-requests.org/en/latest/
+      * Allows users to access data from other URLs/APIs very easily
 * Class Interface Design
-  *
   
      * Class Diagram v1![class diagram v1](assets/class_diagram_v1.jpg)
   *
@@ -51,8 +49,9 @@ This program takes a search term (in English) and searches that term on differen
     * This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm.
 * Classes
     * search bar(intext bar/search button)
-    * setting button(default broser, default language, comparison browser, comparison languages)
-    * results(selected results(translate results/scroll), add results, reader added results)
+    * metabrowser (title of the browser)
+    * scraping (the scraper itself)
+    * controller
 
 ## Project Structure *(Software Lead)*
 
@@ -99,7 +98,7 @@ The back end specialist designed the scraper models that we used in the controll
 |:----------------------|:-------------:| -----------------:| -----------:|
 | 1 | Click Run Button |Program starts, GUI with search bar appears on the screen  |    
 |  2  | User types out query  | Display the query in the search bar| 
-| 3 | Click search button on screen Runs the web scraper, and the search results from different search engines for the same query appear on the screen | 
-| 4 | User searches another query by modifying value in search box and presses search| Data from previous query is cleared and repeats steps 2 and 3|
+| 3 | Click search button on screen, Runs the web scraper, and the search results from google appear on the screen |Top 10 results appear in the console| 
+| 4 | Click on URL from one of results | Takes you to the website for that result|
 
 
