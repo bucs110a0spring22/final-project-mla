@@ -64,8 +64,10 @@ The Project is broken down into the following file structure:
     * scraping
     * searchbar
 * assets
-    * <all of your media, i.e. images, font files, etc, should go here)
-    * First Draft of our GUI: https://replit.com/@lukepawlicki/final-project-mla#assets/First%20GUI%20Draft.jpg
+    *![First GUI Draft (1)](First%20GUI%20Draft%20(1).jpg)
+    *![metabrowser](metabrowser.jpg)
+    * ![searchbar](searchbar.jpg)
+    * 
 * etc
     * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
 
