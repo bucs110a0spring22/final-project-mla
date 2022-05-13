@@ -27,7 +27,7 @@ class Basescraper(object):
   #   pass
 
 class Googlescraper(Basescraper):
-  def __init__(self, api_key="AIzaSyAk-p1XIJe6D7CI1BFCUQWr8FnWJJZAw5U", cse_engine_id="dfa6a9cd2b3cc6812"):
+  def __init__(self, api_key="AIzaSyAS9eKgOiroK3C1W75EUD2i0Q452NFs35k", cse_engine_id="dfa6a9cd2b3cc6812"):
     super().__init__()
     self.API_KEY = api_key
     self.SEARCH_ENGINE_ID = cse_engine_id
