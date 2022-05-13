@@ -16,24 +16,27 @@ class Controller:
     
     
   #https://stackoverflow.com/questions/42014195/rendering-text-with-multiple-lines-in-pygame
-  def blit_text(self, surface, text, pos, font, color=pygame.Color('black')):
-    words = [word.split(' ') for word in text.splitlines()]  # 2D array where each row is a list of words.
-    space = font.size(' ')[0]  # The width of a space.
-    max_width, max_height = surface.get_size()
-    x, y = pos
-    for line in words:
-        for word in line:
-            word_surface = font.render(word, 0, color)
-            word_width, word_height = word_surface.get_size()
-            if x + word_width >= max_width:
-                x = pos[0]  # Reset the x.
-                y += word_height  # Start on new row.
-            surface.blit(word_surface, (x, y))
-            x += word_width + space
-        x = pos[0]  # Reset the x.
-        y += word_height  # Start on new row.
+  # def blit_text(self, surface, text, pos, font, color=pygame.Color('black')):
+  #   words = [word.split(' ') for word in text.splitlines()]  # 2D array where each row is a list of words.
+  #   space = font.size(' ')[0]  # The width of a space.
+  #   max_width, max_height = surface.get_size()
+  #   x, y = pos
+  #   for line in words:
+  #       for word in line:
+  #           word_surface = font.render(word, 0, color)
+  #           word_width, word_height = word_surface.get_size()
+  #           if x + word_width >= max_width:
+  #               x = pos[0]  # Reset the x.
+  #               y += word_height  # Start on new row.
+  #           surface.blit(word_surface, (x, y))
+  #           x += word_width + space
+  #       x = pos[0]  # Reset the x.
+  #       y += word_height  # Start on new row.
     
   def gameloop(self):
+    '''
+    Main loop for the scraper
+    '''
     # has_result_text = False
     query = input("What do you want to search for? ")
     while self.state == "run":
@@ -50,6 +53,7 @@ class Controller:
             # result_text = []
             # print('beforeScraping')
             for scrape in [masterscraper.Googlescraper(), masterscraper.Bingscraper()]:
+              '''makes scrape an object of masterscraper and its subclasses. search_results and result_filename are fed back into masterscraper to the save_results method'''
               result_filename = query + scrape.search_engine() + "results" + ".txt"
               search_results = scrape.search(query)
               scrape.save_results(search_results, result_filename)

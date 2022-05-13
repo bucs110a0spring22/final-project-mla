@@ -7,7 +7,7 @@
 
 [repl](https://replit.com/join/aqhcnsdthp-lukepawlicki) 
 
-<< [link to demo presentation slides](#) >>
+https://docs.google.com/presentation/d/1qTeAKAkvUmXAEm4u4Im8whDBo7lfn8AWfAnaxJTqBIk/edit#slide=id.p 
 
 ### Team:  MLA 
 #### Luke Pawlicki, Mako Ikeda, Andrew Wang 
@@ -63,7 +63,7 @@ The Project is broken down into the following file structure:
 * src
     * controller
     * metabrowser
-    * scraping
+    * masterscraper
     * searchbar
 * assets
     *![First GUI Draft (1)](First%20GUI%20Draft%20(1).jpg)
@@ -72,7 +72,7 @@ The Project is broken down into the following file structure:
     * ![GUI_draft_v2](GUI_draft_v2.pdf)
     * ![class_diagram_v1 (1)](class_diagram_v1%20(1).pdf)
 * etc
-    * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
+    * ![Final Project Recording.mp4]
 
 ***
 
