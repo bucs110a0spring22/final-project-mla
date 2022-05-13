@@ -41,6 +41,8 @@ This program takes a search term (in English) and searches that term on differen
     * requests
       * https://docs.python-requests.org/en/latest/
       * Allows users to access data from other URLs/APIs very easily
+    * pprint
+      * Used for ease of debugging the data the API returned
 * Class Interface Design
   
      * Class Diagram v1![class diagram v1](assets/class_diagram_v1.jpg)
@@ -50,7 +52,7 @@ This program takes a search term (in English) and searches that term on differen
 * Classes
     * search bar(intext bar/search button)
     * metabrowser (title of the browser)
-    * scraping (the scraper itself)
+    * masterscraper (the scraper itself)
     * controller
 
 ## Project Structure *(Software Lead)*
@@ -67,7 +69,8 @@ The Project is broken down into the following file structure:
     *![First GUI Draft (1)](First%20GUI%20Draft%20(1).jpg)
     *![metabrowser](metabrowser.jpg)
     * ![searchbar](searchbar.jpg)
-    * 
+    * ![GUI_draft_v2](GUI_draft_v2.pdf)
+    * ![class_diagram_v1 (1)](class_diagram_v1%20(1).pdf)
 * etc
     * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
 
@@ -100,7 +103,7 @@ The back end specialist designed the scraper models that we used in the controll
 |:----------------------|:-------------:| -----------------:| -----------:|
 | 1 | Click Run Button |Program starts, GUI with search bar appears on the screen  |    
 |  2  | User types out query  | Display the query in the search bar| 
-| 3 | Click search button on screen, Runs the web scraper, and the search results from google appear on the screen |Top 10 results appear in the console| 
-| 4 | Click on URL from one of results | Takes you to the website for that result|
+| 3 | Click search button on screen, Runs the web scraper, and the search results from google and bing appear in new files |Top 10 results appear in the files| 
+| 4 | User clicks on the results files | Opens the file with the top 10 results from their search|
 
 

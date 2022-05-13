@@ -23,8 +23,8 @@ class Basescraper(object):
   def search_engine(self):
     pass
 
-  def process_results(self, results):
-    pass
+  # def process_results(self, results):
+  #   pass
 
 class Googlescraper(Basescraper):
   def __init__(self, api_key="AIzaSyAk-p1XIJe6D7CI1BFCUQWr8FnWJJZAw5U", cse_engine_id="dfa6a9cd2b3cc6812"):
@@ -71,7 +71,7 @@ class Bingscraper(Basescraper):
         # get response
       data = requests.get(search_url, headers=headers, params=params).json()
       # pprint.pprint(data)
-      print(len(data))
+      # print(len(data))
       return data
 
   def save_results(self, results, filename):
@@ -112,7 +112,7 @@ class Masterscraper:
       # get response
     data = requests.get(search_url, headers=headers, params=params).json()
     # pprint.pprint(data)
-    print(len(data))
+    # print(len(data))
     return data
 
   def save_raw(self, results, filename):

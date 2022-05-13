@@ -34,7 +34,7 @@ class Controller:
         y += word_height  # Start on new row.
     
   def gameloop(self):
-    has_result_text = False
+    # has_result_text = False
     query = input("What do you want to search for? ")
     while self.state == "run":
       self.display.fill((250,250,250))
@@ -47,21 +47,21 @@ class Controller:
       for event in pygame.event.get():
         if event.type == pygame.MOUSEBUTTONDOWN:
           if self.searchbar.rect.collidepoint(event.pos):
-            result_text = ''
-            print('beforeScraping')
+            # result_text = []
+            # print('beforeScraping')
             for scrape in [masterscraper.Googlescraper(), masterscraper.Bingscraper()]:
               result_filename = query + scrape.search_engine() + "results" + ".txt"
               search_results = scrape.search(query)
               scrape.save_results(search_results, result_filename)
               
-              result_file_handle = open(result_filename, "r")
-              result_text += f'{scrape.search_engine()} Result: \n{result_file_handle.read()}'
-              has_result_text = True
+              # result_file_handle = open(result_filename, "r")
+              # result_text += f'{scrape.search_engine()} Result: \n{result_file_handle.read()}'
+              # has_result_text = True
       
-      if has_result_text:
-        font = pygame.font.SysFont('Arial', 4)
-        self.blit_text(self.display, result_text, (0, 150), font)
-        pygame.display.update()        
+      # if has_result_text:
+      #   font = pygame.font.SysFont('Arial', 4)
+      #   self.blit_text(self.display, result_text, (0, 150), font)
+      #   pygame.display.update()        
               
                            
                       
